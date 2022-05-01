@@ -19,7 +19,7 @@ async function run(){
     try{
         await client.connect();
         const serviceCollection = client.db('car-server-one').collection('service')
-        // console.log(serviceCollection);
+
 
        app.get('/service', async(req,res) =>{
            const query = {};
